@@ -28,6 +28,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     final pages = List.generate(
         6,
         (index) => Container(
@@ -63,20 +64,22 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 24, bottom: 12),
+                padding:  EdgeInsets.only(top: 24, bottom: 12),
                 child: Text(
                   'Worm',
                   style: TextStyle(color: Colors.black54),
                 ),
               ),
-              SmoothPageIndicator(
-                controller: controller,
-                count: pages.length,
-                effect: WormEffect(
-                  dotHeight: 16,
-                  dotWidth: 16,
-                  type: WormType.thin,
-                  // strokeWidth: 5,
+              Container(
+                color: Colors.black,
+                child: SmoothPageIndicator(
+                  controller: controller,
+                  count: pages.length,
+                  effect: SwapCustomEffect(
+                    dotHeight: 16,
+                    dotWidth: 56,
+                    strokeWidth: 5,spacing: 0,colors: [Colors.deepPurple,Colors.orange]
+                  ),
                 ),
               ),
               Padding(
