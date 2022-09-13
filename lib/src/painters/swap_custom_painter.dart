@@ -56,7 +56,6 @@ class SwapCustomPainter extends BasicIndicatorPainter {
                   Color(0xFFFFFF00), // yellow sun
                   Color(0xFF0099FF), // blue sky
                 ],
-                stops: <double>[0.4, 1.0],
               ).createShader(Rect.fromLTRB(     xAnchor + distance * i + x,
                 yPos - effect.dotHeight / 2,
                 xAnchor + distance * i + x + effect.dotWidth,
@@ -85,7 +84,6 @@ class SwapCustomPainter extends BasicIndicatorPainter {
                   Color(0xFFFFFF00), // yellow sun
                   Color(0xFF0099FF), // blue sky
                 ],
-                stops: <double>[0.0, 1.0],
               ).createShader(Rect.fromLTRB(     xAnchor + posOffset * distance,
                 yPos - effect.dotHeight / 2,
                 xAnchor + posOffset * distance + effect.dotWidth,

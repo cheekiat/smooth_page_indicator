@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                   effect: SwapCustomEffect(
                     dotHeight: 16,
                     dotWidth: 56,
-                    strokeWidth: 5,spacing: 0,colors: [Colors.deepPurple,Colors.orange]
+                    strokeWidth: 5,spacing: 0,colors: [Color(0xff17aa9d), Color(0xff0d7074), Color(0xff0d7074)]
                   ),
                 ),
               ),
